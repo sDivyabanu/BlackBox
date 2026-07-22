@@ -42,11 +42,14 @@ export default function PuzzleBoard() {
   const gridSize = 5;
   const imageSrc = DEFAULT_IMAGE_SRC;
   const total = gridSize * gridSize;
-  const [tiles, setTiles] = useState<number[]>(() => buildSolvedTiles(total));
+  const [tiles, setTiles] = useState<number[]>(() => shuffleTiles(gridSize));
   const [moves, setMoves] = useState(0);
 
   useEffect(() => {
-    setTiles(shuffleTiles(gridSize));
+    const timer = setTimeout(() => {
+      setTiles(shuffleTiles(gridSize));
+    }, 0);
+    return () => clearTimeout(timer);
   }, [gridSize]);
 
   const blankIndex = tiles.indexOf(total - 1);
