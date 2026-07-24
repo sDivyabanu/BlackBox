@@ -69,10 +69,15 @@ export default function AuthenticationModule() {
 
           <div className="p-6 border-t border-border bg-surface/30">
             <p className="font-mono text-secondary-text text-sm">
-              Everything you need <br/>
+              
+              The machine remembers every visitor. Those who know where memories are kept will find a signed trace. Most will read it. The Engineer expected you to do something else<br/>
+              
+            </p>
+            <p className="font-mono text-secondary-text text-sm">
+              <br/>Everything you need <br/>
               is already here. <br/>
               <span className="text-text mt-2 block">Look closer.</span>
-            </p>
+            </p>            
           </div>
         </div>
 
