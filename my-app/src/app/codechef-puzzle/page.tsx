@@ -41,7 +41,7 @@ export default function CodeChefIntroPage() {
           LOGO CORRUPTED
         </h1>
         <p className="text-slate-400 text-sm md:text-base">
-          BLACKBOX's visual subsystem has been shattered into fragments. Reassemble the
+          BLACKBOX visual subsystem has been shattered into fragments. Reassemble the
           CodeChef logo to restore it and recover the data hidden inside.
         </p>
       </div>
